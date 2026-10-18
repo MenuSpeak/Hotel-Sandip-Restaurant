@@ -1120,14 +1120,13 @@
 
                     <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ सर्व पदार्थ | All Items</button>
-<button class="tab" data-cat="Starter">🍗 स्टार्टर | Starter</button>
-<button class="tab" data-cat="Soup">🥣 सूप | Soup</button>
-<button class="tab" data-cat="Biryani">🍲 बिर्याणी | Biryani</button>
-<button class="tab" data-cat="Non-Veg Rice">🍚 नॉन-व्हेज राईस | Non-Veg Rice</button>
-<button class="tab" data-cat="Non-Veg Noodles">🍜 नॉन-व्हेज नूडल्स | Non-Veg Noodles</button>
-<button class="tab" data-cat="Tandoori">🍢 तंदूरी | Tandoori</button>
-<button class="tab" data-cat="Veg Rice">🍚 व्हेज राईस | Veg Rice</button>
-<button class="tab" data-cat="Veg Noodles">🍜 व्हेज नूडल्स | Veg Noodles</button>
+<button class="tab" data-cat="SPECIAL SNACKS">🍲 स्पेशल स्नॅक्स | Special Snacks</button>
+<button class="tab" data-cat="SWEETS">🍬 मिठाई | Sweets</button>
+<button class="tab" data-cat="SNACKS">🥟 स्नॅक्स / फरसाण | Snacks</button>
+<button class="tab" data-cat="BEVERAGES">☕ पेय | Beverages</button>
+<button class="tab" data-cat="MEALS">🍱 जेवण / डबा | Meals</button>
+<button class="tab" data-cat="BAKERY">🎂 बेकरी / केक | Bakery</button>
+<button class="tab" data-cat="DAIRY & BAKERY">🥛 डेअरी प्रॉडक्ट्स | Dairy & Bakery</button>
                     </div>
                 </div>
             </div>
@@ -1256,7 +1255,29 @@
         // Menu Data
         const data = [
 
- 
+ { "id": 1, "cat": "SPECIAL SNACKS", "name": "घोलमे अण्णांची फेमस मिसळ", "price": "40 RS", "desc": "Famous special misal pav", "tags": ["Veg"], "img": "img/gholme_anna_misal.jpeg" },
+  { "id": 2, "cat": "SWEETS", "name": "प्रसिद्ध बासुंदी", "price": "40 RS", "desc": "Famous sweet rich basundi", "tags": ["Veg"], "img": "img/basundi.jpeg" },
+  { "id": 3, "cat": "SWEETS", "name": "जगप्रसिद्ध पेढा", "price": "20 RS प्रति 50 ग्रॅम", "desc": "World famous traditional pedha", "tags": ["Veg"], "img": "img/pedha.jpeg" },
+  { "id": 4, "cat": "SNACKS", "name": "चिवडा", "price": "20 RS", "desc": "Crispy and savory chivda", "tags": ["Veg"], "img": "img/chivda.jpeg" },
+  { "id": 5, "cat": "SWEETS", "name": "बालुशाही", "price": "300 RS प्रति किलो", "desc": "Traditional sweet balushahi", "tags": ["Veg"], "img": "img/balushahi.jpeg" },
+  { "id": 6, "cat": "SWEETS", "name": "जिलेबी", "price": "200 RS प्रति किलो", "desc": "Crispy and juicy hot jalebi", "tags": ["Veg"], "img": "img/jalebi.jpeg" },
+  { "id": 7, "cat": "BEVERAGES", "name": "चहा", "price": "10 RS", "desc": "Hot fresh cutting tea", "tags": ["Veg"], "img": "img/chaha.jpeg" },
+  { "id": 8, "cat": "MEALS", "name": "जेवणाचा डबा", "price": "100 RS", "desc": "Full meal thali / tiffin box", "tags": ["Veg"], "img": "img/jevanacha_daba.jpeg" },
+  { "id": 9, "cat": "SNACKS", "name": "खिचडी भजे", "price": "40 RS", "desc": "Crispy khichadi bhajiya snack", "tags": ["Veg"], "img": "img/khichadi_bhaje.jpeg" },
+  { "id": 10, "cat": "SWEETS", "name": "मोतीचूर लाडू", "price": "320 RS प्रति किलो", "desc": "Delicious sweet motichoor laddu", "tags": ["Veg"], "img": "img/motichoor_laddu.jpeg" },
+  { "id": 11, "cat": "SPECIAL SNACKS", "name": "रस्सा वडा", "price": "40 RS", "desc": "Crispy vada served with spicy rassa gravy", "tags": ["Veg"], "img": "img/rassa_vada.jpeg" },
+  { "id": 12, "cat": "SNACKS", "name": "मुंगवडा", "price": "20 RS", "desc": "Crispy fried moong dal vada", "tags": ["Veg"], "img": "img/mungvada.jpeg" },
+  { "id": 13, "cat": "BAKERY", "name": "बर्थडे केक (250 ग्रॅम)", "price": "150 RS", "desc": "Freshly baked birthday cake 250g", "tags": ["Veg"], "img": "img/birthday_cake_250g.jpeg" },
+  { "id": 14, "cat": "BAKERY", "name": "बर्थडे केक (500 ग्रॅम)", "price": "250 RS", "desc": "Freshly baked birthday cake 500g", "tags": ["Veg"], "img": "img/birthday_cake_500g.jpeg" },
+  { "id": 15, "cat": "DAIRY & BAKERY", "name": "दही", "price": "--", "desc": "Fresh plain curd", "tags": ["Veg"], "img": "img/curd.jpeg" },
+  { "id": 16, "cat": "DAIRY & BAKERY", "name": "दूध", "price": "--", "desc": "Pure fresh milk", "tags": ["Veg"], "img": "img/dudh.jpeg" },
+  { "id": 17, "cat": "DAIRY & BAKERY", "name": "ताक", "price": "--", "desc": "Refreshing salted buttermilk", "tags": ["Veg"], "img": "img/taak.jpeg" },
+  { "id": 18, "cat": "DAIRY & BAKERY", "name": "पनीर", "price": "--", "desc": "Fresh soft dairy paneer", "tags": ["Veg"], "img": "img/paneer.jpeg" },
+  { "id": 19, "cat": "DAIRY & BAKERY", "name": "लस्सी", "price": "--", "desc": "Sweet chilled creamy lassi", "tags": ["Veg"], "img": "img/lassi.jpeg" },
+  { "id": 20, "cat": "DAIRY & BAKERY", "name": "आईस्क्रीम", "price": "--", "desc": "Cold assorted ice cream", "tags": ["Veg"], "img": "img/icecream.jpeg" },
+  { "id": 21, "cat": "DAIRY & BAKERY", "name": "ब्रेड", "price": "--", "desc": "Fresh bakery bread", "tags": ["Veg"], "img": "img/bread.jpeg" },
+  { "id": 22, "cat": "DAIRY & BAKERY", "name": "बिस्कीट", "price": "--", "desc": "Assorted crispy biscuits", "tags": ["Veg"], "img": "img/biscuit.jpeg" },
+  { "id": 23, "cat": "DAIRY & BAKERY", "name": "चॉकलेट्स", "price": "--", "desc": "Assorted sweet chocolates", "tags": ["Veg"], "img": "img/chocolate.jpeg" },
 
 
 
